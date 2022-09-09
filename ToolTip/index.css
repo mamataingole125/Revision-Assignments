@@ -1,0 +1,209 @@
+body{
+    background-color: black;
+}
+h1{
+    color: white;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 45px;
+    
+}
+.container{
+  
+     width: 600px;
+  
+   margin: auto;
+   margin-top: 100px;
+  background-color: rgb(141, 217, 233);
+  padding: 100px;
+  border-radius: 50%;
+  
+}
+
+.tooltip{
+    position:relative ;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    margin:20px ;
+    padding: 10px;
+    background-color: rgb(232, 136, 63);
+    width: 60px;
+    border-radius: 10px;
+    text-align: center;
+      margin-left: 40px;
+}
+/* *******TOP********* */
+.tooltip .tooltiptop{
+    visibility: hidden;
+    width: 120px;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+position: absolute;
+z-index: 1; 
+bottom: 120%;
+left: 50%;
+margin-left: -60px;
+
+opacity: 0;
+transition:opacity 1s;
+}
+
+.tooltip:hover .tooltiptop{
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip .tooltiptop::after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+
+/* *******BOTTOM***** */
+
+.tooltip .tooltipbottom{
+    visibility: hidden;
+    width: 120px;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+position: absolute;
+z-index: 1; 
+top: 120%;
+left: 50%;
+margin-left: -60px;
+
+opacity: 0;
+transition:opacity 1s;
+}
+
+.tooltip:hover .tooltipbottom{
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip .tooltipbottom::after{
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color:  transparent transparent black transparent;
+}
+
+
+
+/* *******LEFT***** */
+
+.tooltip .tooltipleft{
+    visibility: hidden;
+    width: 120px;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+position: absolute;
+z-index: 1; 
+top: 3px;
+right: 120%;
+
+
+opacity: 0;
+transition:opacity 1s;
+}
+
+.tooltip:hover .tooltipleft{
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip .tooltipleft::after{
+  content: "";
+  position: absolute;
+  top: 35%;
+  left: 100%;
+  margin-right: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color:  transparent  transparent  transparent black ;
+}
+
+/* ********RIGHT******** */
+
+.tooltip .tooltipright{
+    visibility: hidden;
+    width: 120px;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+position: absolute;
+z-index: 1; 
+top: 5px;
+left: 120%;
+
+
+opacity: 0;
+transition:opacity 1s;
+}
+
+.tooltip:hover .tooltipright{
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip .tooltipright::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color:transparent black transparent transparent;
+}
+
+
+
+
+
+/* .heading{
+    text-align: center;
+    padding: 10px;
+}
+.Allbtns{
+   width: 80%;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    margin: auto;
+   text-align: center;
+  
+}
+.Allbtns button{
+    padding: 8px;
+    width: 70px;
+    border-radius: 10px;
+}
+
+.Allbtns .left:hover{
+
+    background-color: aqua;
+   
+} */
